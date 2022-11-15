@@ -1,0 +1,135 @@
+@media screen and (min-width: 1280px) {
+    body{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+    }
+
+    main{
+        width: 70%;
+        order: 2;
+    }
+    aside{
+        position: inherit;
+        width: 30%;
+        order: 1; 
+    }
+
+    #aside-trigger{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 960px) {
+        #page-menu{
+            display: block;
+        }
+
+        #main-navbar .collapse{
+            display:block;
+        }
+
+        #main-navbar > .pages-menu-container > #pages-menu > li > span.collapse{
+            display: none;
+        }
+
+        .collapse + ul{
+            position: inherit;
+        }
+
+        #main-navbar > .pages-menu-container > #pages-menu > li > a,
+        #main-navbar > .pages-menu-container > #pages-menu > li > .collapse + ul {
+            color: #333;
+            display: inline-block;
+            height: auto;
+        }
+
+        #mobile-view-menu{
+            display: block;
+        }
+        
+        #main-navbar, #main-navbar a:not(#brand a){
+            height: 60px;
+        }
+
+        .page-menu-container{
+            position: relative;
+            background: #ecf0f1;
+        }
+
+        #page-menu{
+            height: auto;
+            position: absolute;
+            top: -9999px;
+            left: -132%;
+            min-width: 300px;
+            background: #ecf0f1;
+        }
+        
+        #main-navbar > .pages-menu-container > #pages-menu > li > .collapse + ul{
+            background: #ecf0f1;
+        }
+
+        pages-menu li{
+            text-align: center;
+            margin: 0;
+        }
+
+        #main-navbar > .pages-menu-container > #pages-menu > li > a,
+        #main-navbar > .pages-menu-container > #pages-menu > li > .collapse + ul > li > a{
+            padding: 1em;
+            width: 100%;
+        }
+
+        #main-navbar > .pages-menu-container > #pages-menu > li > a,
+        #main-navbar > .pages-menu-container > #pages-menu > li > .collapse + ul > li > a:hover{
+            background: #333;
+            color: #ff1d25;
+        }
+
+        #mobile-view-menu:hover + #pages-menu, #pages-menu:hover{
+            top: 60px;
+        }
+}  
+
+@media screen and (max-width: 800px){
+    #main-header{
+        display: inherit;
+        height: auto;
+        text-align: center;
+        font-size: 70%;
+    }
+
+    #logo{
+        height: 200px;
+        padding: 1em;
+    }
+
+    #logo img{
+        height: 100;
+    }
+
+    .content{
+        display: block;
+    }
+
+    aside{
+        position: inherit;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    #aside-trigger{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 500px){
+    #brand{
+        display: none;
+    }
+}
